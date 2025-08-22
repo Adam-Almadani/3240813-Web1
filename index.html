@@ -8,191 +8,182 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <div class="logo">
-    <img src="img/logo.PNG" alt="Marifa logo">
-    </div>
- </header>
-  <!-- Main Content -->
-  <main>
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <h1>الأقسام</h1>
-      <ul>
-        <li><a href="#">خيال علمي</a></li>
-        <li><a href="#">أدب كلاسيكي</a></li>
-        <li><a href="#">تطوير ذاتي</a></li>
-        <li><a href="#">تاريخ</a></li>
-      </ul>
-    </div>
+      <div class="header-items">
+        <ul>
+          <li class="header-item">التاريخ</li>
+          <li class="header-item">خيال علمي</li>
+          <li class="header-item">أدب كلاسيكي</li>
+          <li class="header-item">تطوير الذات</li>
+        </ul>
+      </div>
+      <img src="img/logo.PNG" alt="Marifa logo" class="header-image">
+  </header>
 
-
-    <!-- Books Grid -->
-    <div class="books-grid">
-      <!-- Book Card -->
-      <div class="book-card">
-        <img src="img/afterdark.jpg" alt="Book Cover">
-        <h2> بعد الظلام</h2>
-        <p>هاروكي موراكامي</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>   
-    </div>
-
-
-    <div class="book-card">
-        <img src="img/kaf.jpg" alt="Book cover featuring stylized Arabic calligraphy of the word kaf on a textured background, evoking a contemplative and artistic mood">
-        <h2> كافكا عى الشاطئ</h2>
-        <p>هاروكي موراكامي</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
+  <div class="books-container">
+    <div class="books-row">
+      <div class="book-card history">
+        <img src="img/1984.jpg" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>1984</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
       </div>
-
-       <div class="book-card">
-        <img src="img/Norwegianwood.jpg" alt="Book Cover">
-        <h2>نورويجن وود</h2>
-        <p>هاروكي</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
+      <div class="book-card tatwir">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
       </div>
-
-      <div class="book-card">
-        <img src="img/QuotationsfromMaoTse-Tung.jpg" alt="Book Cover">
-        <h2> الكتاب الاحمر</h2>
-        <p>ماو تسي تونغ</p>
-        <p>السعر: $15.99</p>
-        <button>  اضافة إلى السلة</button>
-      </div>
-
-      <div class="book-card">
-        <img src="img/DonQuixote.jpg" alt="Book Cover">
-        <h2>دون كيخوته </h2>
-        <p>ميغيل دي ثيربانتس</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-
-      <div class="book-card">
-        <img src="img/ATaleofTwoCities.jpg" alt="Book Cover">
-        <h2>قصة مدينتين </h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div><div class="book-card">
-        <img src="img/TheHitchhiker’sGuidetotheGalaxy.jpg" alt="Book Cover">
-        <h2> دليل المسافر  </h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/harry.jpg" alt="Book Cover">
-        <h2> هاري بوتر</h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/SapiensABriefHistoryofHumankind.png" alt="Book Cover">
-        <h2> سبيينس</h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/ThinkandGrowRich.jpg" alt="Book Cover">
-        <h2>فكر تصبح غنيا </h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/1Q8423.jpg" alt="Book Cover">
-        <h2> 1Q844 P2+3</h2>
-        <p>هاروكي موراكامي</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/TheAlchemist.jpg" alt="Book Cover">
-        <h2> الخيميائي</h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/1q84.jpg" alt="Book Cover">
-        <h2> 1Q84 P1</h2>
-        <p>هاروكي موراكامي</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/YouCanHealYourLife.jpg" alt="Book Cover">
-        <h2> يمكنك شفاء حياتك</h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/RichDadPoorDad.jpg" alt="Book Cover">
-        <h2> الاب الغني والفقير</h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/The7HabitsofHighlyEffectiePeople.jpg" alt="Book Cover">
-        <h2> العادات السبع</h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/TheHungerGames.jpg" alt="Book Cover">
-        <h2> العاب الجوع</h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/1984.jpg" alt="Book Cover">
-        <h2>1984 </h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/Dune.jpg" alt="Book Cover">
-        <h2>كثيب </h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
-      </div>
-      
-      <div class="book-card">
-        <img src="img/Foundation.jpg" alt="Book Cover">
-        <h2> المؤسسة</h2>
-        <p>المؤلف</p>
-        <p>السعر: $15.99</p>
-        <button>إضافة إلى السلة</button>
+      <div class="book-card khayal">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
       </div>
     </div>
     
-    
-  </main>
+    <div class="books-row">
+      <div class="book-card adab">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card adab">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+    </div>
+    <div class="books-row">
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+    </div>
+    <div class="books-row">
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+    </div>
+    <div class="books-row">
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+    </div>
+    <div class="books-row">
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+    </div>
+    <div class="books-row">
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+      <div class="book-card">
+        <img src="" alt="" class="book-image">
+        <a href="#" class="book-title"><h2>Nigger</h2></a>
+        <p class="book-author">Nigger</p>
+        <p class="book-price">15.99$</p>
+        <button class="buy-button" onclick="addToCart()">أضف الى السلة</button>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
